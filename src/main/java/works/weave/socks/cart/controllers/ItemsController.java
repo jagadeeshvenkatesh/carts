@@ -41,6 +41,9 @@ public class ItemsController {
     private String delayInMillis;
     @Value("0")
     private String promotionRate;
+    
+    @Value("${version}")
+    private String version;
 
     @ResponseStatus(HttpStatus.OK)
     @RequestMapping(value = "/{itemId:.*}", produces = MediaType.APPLICATION_JSON_VALUE, method = RequestMethod.GET)
@@ -137,6 +140,12 @@ public class ItemsController {
         return "OK - endpoint available";
     }
 
+    @ResponseStatus(HttpStatus.OK)
+    @RequestMapping(method = RequestMethod.GET, path = "/version")
+    public @ResponseBody String getVersion() {
+        return "Version = " + version;
+    }
+    
     // @ResponseStatus(HttpStatus.OK)
     // @RequestMapping(method = RequestMethod.GET, path = "/memoryLeak/{loops}")
     // public void createMemoryLeak(@PathVariable("loops") Optional<String> loopNumber) {
