@@ -41,9 +41,6 @@ public class ItemsController {
     private String delayInMillis;
     @Value("0")
     private String promotionRate;
-    
-    @Value("${version}")
-    private String version;
 
     @ResponseStatus(HttpStatus.OK)
     @RequestMapping(value = "/{itemId:.*}", produces = MediaType.APPLICATION_JSON_VALUE, method = RequestMethod.GET)
@@ -138,12 +135,6 @@ public class ItemsController {
     @RequestMapping(method = RequestMethod.GET, path = "/health")
     public @ResponseBody String getHealth() {
         return "OK - endpoint available";
-    }
-
-    @ResponseStatus(HttpStatus.OK)
-    @RequestMapping(method = RequestMethod.GET, path = "/version")
-    public @ResponseBody String getVersion() {
-        return "Version = " + version;
     }
     
     // @ResponseStatus(HttpStatus.OK)
