@@ -7,7 +7,7 @@ pipeline {
   environment {
     SERVICE_NAME = "carts"
     VERSION = readFile('version').trim()
-    ARTEFACT_ID = "sockshop21/" + "${env.SERVICE_NAME}"
+    ARTEFACT_ID = "crsockshop/" + "${env.SERVICE_NAME}"
     TAG = "${env.DOCKER_REGISTRY_URL}:5000/${env.ARTEFACT_ID}"
     TAG_DEV = "${env.TAG}:${env.VERSION}-${env.BUILD_NUMBER}"
   }
