@@ -4,7 +4,7 @@
     {
       "id": "go_memstats_alloc_bytes",
       "source": "Prometheus",
-      "query": "go_memstats_alloc_bytes",
+      "query": "go_memstats_alloc_bytes{instance='localhost:9090',job='prometheus'}",
       "grading": {
         "type": "Threshold",
         "thresholds": {
