@@ -8,7 +8,7 @@ def tagMatchRules = [
     tags : [
       [context: 'ENVIRONMENT', key: 'application', value: 'sockshop'],
       [context: 'CONTEXTLESS', key: 'service', value: 'carts'],
-      [context: 'CONTEXTLESS', key: 'environment', value: 'dev']
+      [context: 'CONTEXTLESS', key: 'environment', value: 'staging']
     ]
   ]
 ]
@@ -36,7 +36,7 @@ pipeline {
               def status = executeJMeter ( 
                 scriptName: "jmeter/${env.SERVICE_NAME}_perfcheck.jmx",
                 resultsDir: "PerfCheck_${env.SERVICE_NAME}",
-                serverUrl: "${env.SERVICE_NAME}.dev", 
+                serverUrl: "${env.SERVICE_NAME}.staging", 
                 serverPort: 80,
                 checkPath: '/health',
                 vuCount: 10,
