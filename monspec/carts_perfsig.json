@@ -12,7 +12,7 @@
             "aggregation" : "avg",
             "tags" : "service:carts,environment:ENV_PLACEHOLDER",
             "upperSevere" : 7.0,
-            "upperWarning" : 0.0
+            "upperWarning" : 1.0
         }
     ]
 }
