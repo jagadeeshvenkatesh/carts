@@ -2,7 +2,7 @@
   "spec_version": "1.0",
   "indicators": [
     {
-      "id": "go_memstats_alloc_bytes",
+      "id": "requests_latency_seconds_sum",
       "source": "Prometheus",
       "query": "requests_latency_seconds_sum{instance='carts.dev.svc.cluster.local:80',job='carts'}",
       "grading": {
