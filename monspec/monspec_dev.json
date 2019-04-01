@@ -10,7 +10,7 @@
         "thresholds": {
           "upperSevere": 5
         },
-        "metricScore": 20
+        "metricScore": 100
       }
     }
   ],
