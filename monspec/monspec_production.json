@@ -2,9 +2,9 @@
   "spec_version": "1.0",
   "indicators": [
     {
-      "id": "heap_committed",
+      "id": "requests_latency_seconds_sum",
       "source": "Prometheus",
-      "query": "heap_committed{instance='carts.production.svc.cluster.local:80',job='carts'}",
+      "query": "requests_latency_seconds_sum{instance='carts.production.svc.cluster.local:80',job='carts'}",
       "grading": {
         "type": "Threshold",
         "thresholds": {
