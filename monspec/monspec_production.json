@@ -4,13 +4,13 @@
     {
       "id": "heap_committed",
       "source": "Prometheus",
-      "query": "requests_latency_seconds_sum{instance='carts.production.svc.cluster.local:80',job='carts'}",
+      "query": "heap_committed{instance='carts.production.svc.cluster.local:80',job='carts'}",
       "grading": {
         "type": "Threshold",
         "thresholds": {
-          "upperSevere": 4
+          "upperSevere": 500000
         },
-        "metricScore": 20
+        "metricScore": 100
       }
     }
   ],
