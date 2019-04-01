@@ -8,7 +8,7 @@
       "grading": {
         "type": "Threshold",
         "thresholds": {
-          "upperSevere": 500000
+          "upperSevere": 8000000
         },
         "metricScore": 100
       }
