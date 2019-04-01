@@ -4,7 +4,7 @@
     {
       "id": "heap_committed",
       "source": "Prometheus",
-      "query": "requests_latency_seconds_sum{job='carts'})",
+      "query": "requests_latency_seconds_sum{job='carts'}",
       "grading": {
         "type": "Threshold",
         "thresholds": {
