@@ -18,7 +18,7 @@
       "source": "Dynatrace",
       "query": {
         "timeseriesId": "com.dynatrace.builtin:service.responsetime",
-        "aggregation": "p90",
+        "aggregation": "AVG",
         "tags": [
           "service:carts",
           "environment:dev"
