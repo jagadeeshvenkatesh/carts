@@ -10,9 +10,30 @@
         "thresholds": {
           "upperSevere": 8000000
         },
-        "metricScore": 100
+        "metricScore": 50
       }
-    }
+    },
+    {
+      "id": "P90_ResponseTime_Backend",
+      "source": "Dynatrace",
+      "query": {
+        "timeseriesId": "com.dynatrace.builtin:service.responsetime",
+        "aggregation": "p90",
+        "tags": [
+          "backend"
+        ]
+      },
+      "grading": {
+        "type": "Threshold",
+        "thresholds": {
+          "upperSevere": 1000000,
+          "upperWarning": 800000,
+          "lowerWarning ": 200000,
+          "lowerSevere": 100000
+        },
+        "metricScore": 50
+      }
+    },
   ],
   "objectives": {
     "pass": 90,
