@@ -19,7 +19,8 @@
       "query": {
         "timeseriesId": "com.dynatrace.builtin:service.responsetime",
         "aggregation": "AVG",
-        "relativeTime": "10mins",
+        "startTimestamp": "",
+        "endTimestamp": "",
         "tags": [
           "service:carts",
           "environment:dev"
