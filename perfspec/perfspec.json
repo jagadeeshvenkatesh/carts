@@ -31,8 +31,6 @@
         "thresholds": {
           "upperSevere": 1000000,
           "upperWarning": 800000,
-          "lowerWarning ": 200000,
-          "lowerSevere": 100000
         },
         "metricScore": 50
       }
