@@ -4,7 +4,7 @@
     {
       "id": "heap_committed",
       "source": "Prometheus",
-      "query": "heap_committed{instance='carts.ENV_PLACEHOLDER.svc.cluster.local:80',job='carts'}",
+      "query": "requests_latency_seconds_sum{instance='carts.ENV_PLACEHOLDER.svc.cluster.local:80',job='carts'}[5m]/requests_latency_seconds_count{instance='carts.ENV_PLACEHOLDER.svc.cluster.local:80',job='carts'}[5m]",
       "grading": {
         "type": "Threshold",
         "thresholds": {
