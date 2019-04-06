@@ -21,10 +21,6 @@
         "aggregation": "AVG",
         "startTimestamp": "",
         "endTimestamp": "",
-        "tags": [
-          "service:carts",
-          "environment:ENV_PLACEHOLDER"
-        ]
       },
       "grading": {
         "type": "Threshold",
