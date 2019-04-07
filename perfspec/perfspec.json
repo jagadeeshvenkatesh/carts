@@ -20,7 +20,7 @@
         "timeseriesId": "com.dynatrace.builtin:service.responsetime",
         "aggregation": "AVG",
         "startTimestamp": "",
-        "endTimestamp": "",
+        "endTimestamp": ""
       },
       "grading": {
         "type": "Threshold",
