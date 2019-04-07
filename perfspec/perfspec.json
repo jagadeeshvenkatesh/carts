@@ -2,19 +2,7 @@
   "spec_version": "1.0",
   "indicators": [
     {
-      "id": "request_latency_seconds",
-      "source": "Prometheus",
-      "query": "rate(requests_latency_seconds_sum{instance='carts.ENV_PLACEHOLDER.svc.cluster.local:80',job='carts'}[3m])/rate(requests_latency_seconds_count{instance='carts.ENV_PLACEHOLDER.svc.cluster.local:80',job='carts'}[3m])",
-      "grading": {
-        "type": "Threshold",
-        "thresholds": {
-          "upperSevere": 1.2
-        },
-        "metricScore": 50
-      }
-    },
-    {
-      "id": "P90_ResponseTime_Backend",
+      "id": "ResponseTime_Backend",
       "source": "Dynatrace",
       "query": {
         "timeseriesId": "com.dynatrace.builtin:service.responsetime",
