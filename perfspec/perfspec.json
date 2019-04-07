@@ -4,7 +4,7 @@
     {
       "id": "request_latency_seconds",
       "source": "Prometheus",
-      "query": "histogram_quantile(0.8, rate(requests_latency_seconds_bucket{instance='carts.ENV_PLACEHOLDER.svc.cluster.local:80',job='carts'}[3m]))",
+      "query": "rate(requests_latency_seconds_sum{instance='carts.ENV_PLACEHOLDER.svc.cluster.local:80',job='carts'}[3m])/rate(requests_latency_seconds_count{instance='carts.ENV_PLACEHOLDER.svc.cluster.local:80',job='carts'}[3m])",
       "grading": {
         "type": "Threshold",
         "thresholds": {
