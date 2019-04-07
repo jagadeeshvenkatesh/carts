@@ -16,7 +16,7 @@
           "upperSevere": 1000000,
           "upperWarning": 800000
         },
-        "metricScore": 50
+        "metricScore": 100
       }
     }
   ],
