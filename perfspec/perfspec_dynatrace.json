@@ -2,18 +2,6 @@
   "spec_version": "1.0",
   "indicators": [
     {
-      "id":"request_latency_seconds",
-      "source":"Prometheus",
-      "query":"rate(requests_latency_seconds_sum{job='carts-$ENVIRONMENT'}[$DURATION_MINUTESm])/rate(requests_latency_seconds_count{job='carts-$ENVIRONMENT'}[$DURATION_MINUTESm])",
-      "grading":{
-          "type":"Threshold",
-          "thresholds":{
-            "upperSevere":0.8
-          },
-          "metricScore":50
-      }
-    },
-    {
       "id": "ResponseTime_Backend",
       "source": "Dynatrace",
       "query": {
@@ -28,7 +16,7 @@
           "upperSevere": 1000000,
           "upperWarning": 800000
         },
-        "metricScore": 50
+        "metricScore": 100
       }
     }
   ],
